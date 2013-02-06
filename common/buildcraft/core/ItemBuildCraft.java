@@ -11,13 +11,21 @@ package buildcraft.core;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.common.Configuration;
+import buildcraft.BuildCraftCore;
 import buildcraft.core.utils.StringUtil;
 
 public class ItemBuildCraft extends Item {
 
 	public ItemBuildCraft(int i) {
 		super(i);
-		setTextureFile(DefaultProps.TEXTURE_ITEMS);
+
+		if (i == BuildCraftCore.mainConfiguration.get(Configuration.CATEGORY_ITEM, "fuel.id", DefaultProps.FUEL_ID).getInt(DefaultProps.FUEL_ID)) {
+			setTextureFile(DefaultProps.TEXTURE_LIQUID);
+		} else {
+			setTextureFile(DefaultProps.TEXTURE_ITEMS);
+		}
+
 		setCreativeTab(CreativeTabBuildCraft.tabBuildCraft);
 	}
 

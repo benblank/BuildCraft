@@ -40,7 +40,7 @@ public class BlockOilFlowing extends BlockFluid implements ILiquid {
 
 	@Override
 	public String getTextureFile() {
-		return DefaultProps.TEXTURE_BLOCKS;
+		return DefaultProps.TEXTURE_LIQUID;
 	}
 
 	private void updateFlow(World world, int i, int j, int k) {

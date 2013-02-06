@@ -33,7 +33,7 @@ public class BlockOilStill extends BlockStationary implements ILiquid {
 
 	@Override
 	public String getTextureFile() {
-		return DefaultProps.TEXTURE_BLOCKS;
+		return DefaultProps.TEXTURE_LIQUID;
 	}
 
 	@Override

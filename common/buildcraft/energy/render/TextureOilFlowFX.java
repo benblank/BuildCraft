@@ -38,7 +38,7 @@ public class TextureOilFlowFX extends FMLTextureFX {
 
 	@Override
 	public void bindImage(RenderEngine renderengine) {
-		GL11.glBindTexture(3553, renderengine.getTexture(DefaultProps.TEXTURE_BLOCKS));
+		GL11.glBindTexture(3553, renderengine.getTexture(DefaultProps.TEXTURE_LIQUID));
 	}
 
 	@Override

@@ -29,6 +29,7 @@ public class DefaultProps {
 	public static String TEXTURE_ITEMS = "/gfx/buildcraft/items/items.png";
 	public static String TEXTURE_ICONS = TEXTURE_PATH_GUI + "/icons.png";
 	public static String TEXTURE_TRIGGERS = TEXTURE_PATH_GUI + "/triggers.png";
+	public static String TEXTURE_LIQUID = TEXTURE_PATH_BLOCKS + "/liquid.png";
 
 	public static final String DEFAULT_LANGUAGE = "en_US";
 
